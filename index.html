@@ -23,23 +23,68 @@
             margin-right: auto;
             border-radius: 45px;
         }
+        .uk-offcanvas-bar{
+            background-color: #d9d9d9 !important;
+            width: 50vw !important;
+            opacity: 0.9 !important;
+        }
     }
     @media screen and (max-width: 699px) {
+        .custom{
+            width: 24px !important;
+            height: 24px !important;
+        }
         .image-new {
-            min-height: 50% !important;
+            min-height: 100vh !important;
             display: block;
             margin-left: auto;
             margin-right: auto;
             margin-top: calc(100vh - 85vh);
         }
+        .uk-offcanvas-bar{
+            background-color: red !important;
+            width: 100vw !important;
+            opacity: 0.9 !important;
+        }
+        .uk-text-lead{
+            color: aliceblue !important;
+            font-size: 3rem;
+        }
+        .logo {
+            max-height: 90vh !important;
+            display: block;
+            margin-top: calc(100vh - 55vh);
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    @media screen and (max-width: 1200px) {
+        .image-new {
+            min-height: 100vw !important;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: calc(100vh - 85vh);
+        }
+        .logo {
+            max-height: 90vh !important;
+            display: block;
+            margin-top: calc(100vh - 80vh);
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .uk-offcanvas-bar{
+            background-color: #d9d9d9 !important;
+            width: 100vw !important;
+            opacity: 0.9 !important;
+        }
+        .uk-text-lead{
+            color: aliceblue !important;
+            font-size: 3rem;
+        }
     }
     .uk-text-lead{
         color: aliceblue !important;
-    }
-    .uk-offcanvas-bar{
-        background-color: #d9d9d9 !important;
-        width: 50vw !important;
-        opacity: 0.9 !important;
     }
     *{
         background-color: #06111c !important;
@@ -47,25 +92,23 @@
 </style>
 <body class="uk-margin-auto-top ">
 
-    <div id="all" class="uk-column-1-2 uk-column-divider uk-grid-small uk-child-width-expand@s uk-text-center uk-column-divider ">
-        <div>
-            <div class="uk-card uk-card-default uk-card-body">
+    <div id="all" class="uk-column-1-1@s uk-column-1-1@m uk-column-1-2@l uk-column-divider uk-grid-small uk-child-width-expand@s uk-text-center uk-column-divider ">
+        <div class="column-c">
+            <div class="uk-card uk-card-default uk-card-body column-c">
                 <h1 class="uk-text-lead">Revista</h1>
                 <img class="image-new" src="images/Revista_Mundo%20deporte.jpg" alt="revista" href="#offcanvas-usage" uk-toggle>
             </div>
-        </div>
-        <div>
-            <div class="uk-card uk-card-default uk-card-body uk-margin-auto-vertical">
-                <h1 class="uk-text-lead">Periodico</h1>
+            <div class="uk-card uk-card-default uk-card-body uk-margin-auto-vertical column-c">
+                <h1 class="uk-text-lead">Peri&oacute;dico</h1>
                 <img class="image-new" src="images/Revista_Mundo%20deporte2.jpg " alt="periodico" href="#offcanvas-usage2" uk-toggle>
             </div>
         </div>
     </div>
     <div id="offcanvas-usage" uk-offcanvas>
         <div class="uk-offcanvas-bar">
-            <button style="background-color: #d9d9d9 !important" class="uk-offcanvas-close" type="button" uk-close></button>
+            <button style="background-color: #d9d9d9 !important; color: #d9d9d9 !important;" class="custom uk-offcanvas-close" type="button" uk-close></button>
             <a href="paginas/revista.html">
-                <img style="background-color: #d9d9d9 !important" src="logos/MUNDO_DEPORTE.svg" alt="">
+                <img class="logo" style="background-color: #d9d9d9 !important" src="logos/MUNDO_DEPORTE.svg" alt="">
             </a>
         </div>
     </div>
@@ -73,10 +116,9 @@
         <div class="uk-offcanvas-bar">
             <button style="background-color: #d9d9d9 !important" class="uk-offcanvas-close" type="button" uk-close></button>
             <a href="paginas/revista.html">
-                <img style="background-color: #d9d9d9 !important" src="logos/EL_ESTADO.svg" alt="">
+                <img class="logo" style="background-color: #d9d9d9 !important" src="logos/EL_ESTADO.svg" alt="">
             </a>
         </div>
     </div>
-
 </body>
 </html>
